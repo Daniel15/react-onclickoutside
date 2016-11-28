@@ -63,7 +63,7 @@
           }
           eventHandler(evt);
         }
-      }(this.getDOMNode(), this.handleClickOutside));
+      }(ReactDOM.findDOMNode(this), this.handleClickOutside));
 
       if (document.addEventListener) {
         // W3C events
